@@ -30,6 +30,12 @@
 
 if (isset($_POST['submit'])) {
 
+    $str = "<script>alert('Niet beveiligd tegen script-injections')</script>";
+
+    echo htmlspecialchars($str);echo "<br>";
+  
+
+
     /*
      * OPDRACHT 1:
      * Voer onderstaande code in het naamveld in en kijk wat er gebeurd
