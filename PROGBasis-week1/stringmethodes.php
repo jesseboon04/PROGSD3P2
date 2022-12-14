@@ -33,7 +33,7 @@ if (isset($_POST['submit'])) {
     $str = "<script>alert('Niet beveiligd tegen script-injections')</script>";
 
     echo htmlspecialchars($str);echo "<br>";
-  
+
 
 
     /*
@@ -49,10 +49,15 @@ if (isset($_POST['submit'])) {
      * Pas elke ingevoerde variabele waarde aan met de functie htmlspecialchars().
      */
     $naam = $_POST['naam'];
+    echo htmlspecialchars($naam);
     $straat = $_POST['straat'];
+    echo htmlspecialchars($straat);
     $huisnummer = $_POST['huisnummer'];
+    echo htmlspecialchars($huisnummer);
     $postcode = $_POST['postcode'];
+    echo htmlspecialchars($postcode);
     $woonplaats = $_POST['woonplaats'];
+    echo htmlspecialchars($woonplaats);
 
     /*
      * OPDRACHT 3:
