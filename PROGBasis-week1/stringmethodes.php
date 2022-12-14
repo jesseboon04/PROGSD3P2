@@ -55,6 +55,13 @@ if (isset($_POST['submit'])) {
     echo ucfirst(htmlspecialchars($straat));echo "<br>";
     $huisnummer = $_POST['huisnummer'];
     echo strtolower(htmlspecialchars($huisnummer));echo "<br>";
+    if(is_numeric($huisnummer)){
+        echo $huisnummer;
+    }
+    else{
+        echo "voer een huisnummer in dit is niet geldig:";echo"  ";
+    }
+
     $postcode = $_POST['postcode'];
     echo strtolower(htmlspecialchars($postcode));echo "<br>";
     $woonplaats = $_POST['woonplaats'];
@@ -77,6 +84,7 @@ if (isset($_POST['submit'])) {
         $naam, '<br>',
         $straat, '<br>',
         $huisnummer, '<br>',
+
         $postcode, '<br>',
         $woonplaats, '<br>';
 
