@@ -54,9 +54,9 @@ if (isset($_POST['submit'])) {
     $straat = $_POST['straat'];
     echo ucfirst(htmlspecialchars($straat));echo "<br>";
     $huisnummer = $_POST['huisnummer'];
-    echo htmlspecialchars($huisnummer);echo "<br>";
+    echo strtolower(htmlspecialchars($huisnummer));echo "<br>";
     $postcode = $_POST['postcode'];
-    echo htmlspecialchars($postcode);echo "<br>";
+    echo strtolower(htmlspecialchars($postcode));echo "<br>";
     $woonplaats = $_POST['woonplaats'];
     echo ucfirst(htmlspecialchars($woonplaats));echo "<br>";
 
